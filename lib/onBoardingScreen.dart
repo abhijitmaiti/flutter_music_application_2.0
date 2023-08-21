@@ -16,7 +16,7 @@ class _onBoardingScreenState extends State<onBoardingScreen> {
   PageController _pageController = PageController(initialPage: 0);
 
   AnimatedContainer dotIndicator(index) {
-    return AnimatedContainer(
+  return AnimatedContainer( 
       duration: Duration(milliseconds: 200),
       margin: EdgeInsets.only(right: 10),
       height: 10,

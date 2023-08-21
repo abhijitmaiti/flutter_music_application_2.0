@@ -112,7 +112,7 @@ class _contactUsScreenState extends State<contactUsScreen> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Expanded(
-                                flex: 4,
+                                flex: 2,
                                 child: Container(
                                   child: Column(
                                     children: [
@@ -155,35 +155,30 @@ class _contactUsScreenState extends State<contactUsScreen> {
                                           ),
                                         ],
                                       ),
-                                      SizedBox(
-                                        height: 20,
-                                      ),
-                                      Row(
-                                        children: [
-                                          Icon(
-                                            Icons.location_on,
-                                            color: Colors.orange,
-                                          ),
-                                          SizedBox(
-                                            width: 20,
-                                          ),
-                                          Expanded(
-                                            child: SingleChildScrollView(
-                                              scrollDirection: Axis.horizontal,
-                                              child: Text(
-                                                  "A G C R Pin Code is 110002.\nA G C R is located in\nA CENTRAL DELHI,DELHI, India.",
-                                                  style: TextStyle(
-                                                      color: Colors.white)),
-                                            ),
-                                          )
-                                        ],
-                                      ),
+
+                                      // Row(
+                                      //   children: [
+                                      //     Icon(
+                                      //       Icons.location_on,
+                                      //       color: Colors.orange,
+                                      //     ),
+                                      //     SizedBox(
+                                      //       width: 20,
+                                      //     ),
+                                      //     Expanded(
+                                      //       child: SingleChildScrollView(
+                                      //         scrollDirection: Axis.horizontal,
+                                      //         child: Text(
+                                      //             "A G C R Pin Code is 110002.\nA G C R is located in\nA CENTRAL DELHI,DELHI, India.",
+                                      //             style: TextStyle(
+                                      //                 color: Colors.white)),
+                                      //       ),
+                                      //     )
+                                      //   ],
+                                      // ),
                                     ],
                                   ),
                                 ),
-                              ),
-                              SizedBox(
-                                height: 0,
                               ),
                               Expanded(
                                 flex: 8,

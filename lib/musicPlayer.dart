@@ -1,7 +1,6 @@
 import 'package:audioplayers/audio_cache.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
-
 import 'package:provider/provider.dart';
 import 'models/song_model.dart';
 import 'package:hive_flutter/hive_flutter.dart';
@@ -323,20 +322,26 @@ class _musicPlayerState extends State<musicPlayer> {
                                 SizedBox(
                                   width: 10,
                                 ),
-                                Text(
-                                  "${position.inMinutes}:${position.inSeconds.remainder(60)}",
-                                  style: TextStyle(
-                                      fontSize: 18.0,
-                                      fontWeight: FontWeight.w500,
-                                      color: Colors.white),
+                                Expanded(
+                                  flex: 1,
+                                  child: Text(
+                                    "${position.inMinutes}:${position.inSeconds.remainder(60)}",
+                                    style: TextStyle(
+                                        fontSize: 18.0,
+                                        fontWeight: FontWeight.w500,
+                                        color: Colors.white),
+                                  ),
                                 ),
-                                slider(),
-                                Text(
-                                  "${musicLength.inMinutes}:${musicLength.inSeconds.remainder(60)}",
-                                  style: TextStyle(
-                                      fontSize: 18.0,
-                                      fontWeight: FontWeight.w500,
-                                      color: Colors.white),
+                                Expanded(flex: 7, child: slider()),
+                                Expanded(
+                                  flex: 1,
+                                  child: Text(
+                                    "${musicLength.inMinutes}:${musicLength.inSeconds.remainder(60)}",
+                                    style: TextStyle(
+                                        fontSize: 18.0,
+                                        fontWeight: FontWeight.w500,
+                                        color: Colors.white),
+                                  ),
                                 ),
                                 SizedBox(
                                   width: 10,

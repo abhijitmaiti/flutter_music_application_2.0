@@ -20,29 +20,29 @@ class PlaylistDecoration {
       imgUrl: "assets/image/playlist-02.jpg",
     ),
     PlaylistDecoration(
-      playlistName: "Clandestina",
+      playlistName: "BollyWood-2023",
       singerName: "FILV",
       imgUrl: "assets/image/playlist-03.jpg",
     ),
     PlaylistDecoration(
-      playlistName: "Devil Eyes",
+      playlistName: "Top Hit Song",
       singerName: "Hippie",
       imgUrl: "assets/image/playlist-04.jpg",
     ),
     PlaylistDecoration(
-      playlistName: "Faded",
+      playlistName: "Bengali Song",
       singerName: "Alan Walker",
       imgUrl: "assets/image/playlist-05.jpg",
     ),
-    PlaylistDecoration(
-      playlistName: "Big Boy",
-      singerName: "Hippie",
-      imgUrl: "assets/image/playlist-06.jpg",
-    ),
-    PlaylistDecoration(
-      playlistName: "Middle of night... ",
-      singerName: "Elley Duhe",
-      imgUrl: "assets/image/playlist-07.jpg",
-    ),
+    // PlaylistDecoration(
+    //   playlistName: "Unknown",
+    //   singerName: "Hippie",
+    //   imgUrl: "assets/image/playlist-06.jpg",
+    // ),
+    // PlaylistDecoration(
+    //   playlistName: "Unknown",
+    //   singerName: "Elley Duhe",
+    //   imgUrl: "assets/image/playlist-07.jpg",
+    // ),
   ];
 }

@@ -330,20 +330,26 @@ class _musicPlayerForPlaylistState extends State<musicPlayerForPlaylist> {
                                 SizedBox(
                                   width: 10,
                                 ),
-                                Text(
-                                  "${position.inMinutes}:${position.inSeconds.remainder(60)}",
-                                  style: TextStyle(
-                                      fontSize: 18.0,
-                                      fontWeight: FontWeight.w500,
-                                      color: Colors.white),
+                                Expanded(
+                                  flex: 1,
+                                  child: Text(
+                                    "${position.inMinutes}:${position.inSeconds.remainder(60)}",
+                                    style: TextStyle(
+                                        fontSize: 18.0,
+                                        fontWeight: FontWeight.w500,
+                                        color: Colors.white),
+                                  ),
                                 ),
-                                slider(),
-                                Text(
-                                  "${musicLength.inMinutes}:${musicLength.inSeconds.remainder(60)}",
-                                  style: TextStyle(
-                                      fontSize: 18.0,
-                                      fontWeight: FontWeight.w500,
-                                      color: Colors.white),
+                                Expanded(flex: 7, child: slider()),
+                                Expanded(
+                                  flex: 1,
+                                  child: Text(
+                                    "${musicLength.inMinutes}:${musicLength.inSeconds.remainder(60)}",
+                                    style: TextStyle(
+                                        fontSize: 18.0,
+                                        fontWeight: FontWeight.w500,
+                                        color: Colors.white),
+                                  ),
                                 ),
                                 SizedBox(
                                   width: 10,
